@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>De onde você é?</h1>
+    nacionalidade: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="nal()">
+    <div id="res">
+
+    </div>
+    <script>
+        function nal(){
+            var txtv = window.document.getElementById("txtvel")
+            var res = window.document.querySelector('div#res')
+            var nal = txtv.value
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${nal}</strong>.</p>`
+
+        }
+</script>
+
+</body>
+</html>
